@@ -1,5 +1,5 @@
 <header>
-    <h1>
-        Header
+    <h1 class="text-center">
+        GET A TRAIN
     </h1>
 </header>

@@ -11,6 +11,11 @@ class TrainController extends Controller
     public function index(){
         $trains =Train::all();
 
-        return $trains;
+        return view("trains.index" , compact("trains"));
+    }
+
+    public function today(){
+        $trains = Train::where("day_of_the_departure", "2024-10-28")->get();
+        return view("trains.today" , compact("trains"));
     }
 }
