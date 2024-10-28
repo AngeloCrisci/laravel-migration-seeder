@@ -25,9 +25,17 @@
                 @forelse ($trains as $train )
               <tr>
                 <th scope="row"> {{$train->id}}</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{$train->company}}</td>
+                <td>{{$train->station_departure}}</td>
+                <td>{{$train->station_arrival}}</td>
+                <td>{{$train->time_of_the_departure}}</td>
+                <td>{{$train->day_of_the_departure}}</td>
+                <td>{{$train->time_of_the_arrival}}</td>
+                <td>{{$train->day_of_the_arrival}}</td>
+                <td>{{$train->train_code}}</td>
+                <td>{{$train->wagons}}</td>
+                <td>{{$train->on_time ? "si" : "no"}}</td>
+                <td>{{$train->suspended ? "si" : "no"}}</td>
               </tr>
                 @empty
 
